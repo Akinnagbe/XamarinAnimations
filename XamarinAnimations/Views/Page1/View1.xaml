@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:ctl="clr-namespace:XamarinAnimations.Controls" x:Class="XamarinAnimations.Views.Page1.View1"
+             Padding="20">
+    <ContentPage.Content>
+
+       <StackLayout>
+
+
+           <ctl:FloatingLabelEntry ErrorColor="Red" x:Name="flbName" HintText="Your registered email" ErrorText="email is invalid" VerticalOptions="CenterAndExpand" FloatingText="Username"/>
+           <!--<Grid VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+               <Entry Margin="25,0" Placeholder="sample" x:Name="entSample" Focused="Entry_Focused" Unfocused="Entry_Unfocused"/>
+                <Label x:Name="lblsample"   TranslationY="5" Text="Floating Label" InputTransparent="True" />
+           </Grid>-->
+
+            <!--<Entry  VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"
+               Visual="Material" BackgroundColor="Transparent" Placeholder="Type Here"></Entry>
+
+           <Label Text="{Binding HeighRequest}" TextColor="Red" BindingContext="{x:Reference txtName}"/>-->
+           <Button x:Name="txtName" BackgroundColor="Red" Clicked="Btn_Clicked" Visual="Material" VerticalOptions="CenterAndExpand" Text="Click Me"/>
+       </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
